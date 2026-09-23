@@ -1,5 +1,7 @@
 # Teacher–AI Assessment Studio
 
+[![CI](https://github.com/devissaputra/teacher_ai_assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/teacher_ai_assessment/actions/workflows/ci.yml)
+
 **Human-in-the-loop rubric scoring with disagreement routing, uncertainty, and auditable decisions.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
