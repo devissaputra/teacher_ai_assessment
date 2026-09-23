@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/devissaputra/teacher_ai_assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/teacher_ai_assessment/actions/workflows/ci.yml)
 
+
+**Category:** AI in Education
 **Human-in-the-loop rubric scoring with disagreement routing, uncertainty, and auditable decisions.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
@@ -12,7 +14,7 @@
 
 Automated assessment becomes risky when a clean score hides disagreement and uncertainty. This project makes those tensions visible. It treats AI scoring as decision support and routes ambiguous cases to human review instead of pretending automation is infallible.
 
-The engineering goal is simple: make the research logic inspectable. Every metric in the demo can be traced back to a small function, the demo data can be regenerated from a fixed seed, and the limitations are stated next to the claims rather than buried at the end.
+The project separates AI scoring, teacher scoring, disagreement detection, uncertainty, and final resolution so no single score is treated as ground truth. That structure makes it possible to study where automation helps, where human review is needed, and how decisions can remain auditable.
 
 ## Research questions
 
@@ -32,7 +34,7 @@ The reference pipeline follows five stages:
 4. **Disagreement routing**
 5. **Audit log**
 
-The current implementation is deliberately compact enough to audit. It is a foundation for a real study, not a theatrical “AI demo.”
+The baseline stays deliberately small so rubric logic and routing decisions can be inspected before testing with authentic assessment data.
 
 ## Core outputs
 
