@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teacher-ai-assessment"
+version = "0.1.0"
+description = "Human-in-the-loop rubric scoring with disagreement routing, uncertainty, and auditable decisions."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Devis W. Saputra"}]
+dependencies = ["numpy>=1.26","pandas>=2.0","scikit-learn>=1.4","matplotlib>=3.8","PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0","ruff>=0.6"]
+
+[project.scripts]
+teacher-ai-assessment = "teacher_ai_assessment.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

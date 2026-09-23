@@ -1,0 +1,6 @@
+{
+  "exact_agreement": 0.622,
+  "within_one_agreement": 0.936,
+  "quadratic_kappa": 0.855,
+  "review_rate": 0.254
+}
