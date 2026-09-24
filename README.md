@@ -42,7 +42,6 @@ The baseline stays deliberately small so rubric logic and routing decisions can 
 - `within_one_agreement`
 - `quadratic_kappa`
 - `review_rate`
-- `resolved_disagreement`
 
 ![Synthetic demo dashboard](docs/images/demo_dashboard.png)
 
