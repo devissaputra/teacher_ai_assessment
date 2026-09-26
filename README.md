@@ -1,5 +1,21 @@
 # Teacher–AI Assessment Studio
 
+This prototype compares synthetic human and AI assessment scores and produces a transparent review queue. It reports exact agreement, within-one agreement, quadratic kappa, and the proportion sent for review, using explicit disagreement and uncertainty thresholds. These outputs test the routing logic; they do not establish that an AI assessor is correct or that the thresholds are appropriate for real students.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** The existing suite requires unavailable dependencies; no full-suite pass is claimed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 [![CI](https://github.com/devissaputra/teacher_ai_assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/teacher_ai_assessment/actions/workflows/ci.yml)
 
 
@@ -8,7 +24,6 @@
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
 
-![Architecture](docs/images/architecture.png)
 
 ## Why this project exists
 
@@ -24,7 +39,6 @@ The project separates AI scoring, teacher scoring, disagreement detection, uncer
 
 ## What the repository does
 
-![Pipeline](docs/images/pipeline.png)
 
 The reference pipeline follows five stages:
 
@@ -43,7 +57,6 @@ The baseline stays deliberately small so rubric logic and routing decisions can 
 - `quadratic_kappa`
 - `review_rate`
 
-![Synthetic demo dashboard](docs/images/demo_dashboard.png)
 
 The dashboard above is generated from **synthetic data** and is included only to show what the analysis surface looks like. It is not a reported empirical result.
 
@@ -82,7 +95,6 @@ teacher_ai_assessment/
 
 ## Research design in one picture
 
-![Research map](docs/images/research_map.png)
 
 The fuller design rationale is in [`docs/research_design.md`](docs/research_design.md), including constructs, assumptions, validation steps, and a proposed empirical extension.
 

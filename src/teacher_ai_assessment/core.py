@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Review = |human-AI| > 1 OR uncertainty ≥ .28.
+# Agreement is not accuracy against a gold standard. Quadratic kappa discounts near misses but depends on score marginals; simulated uncertainty is not calibrated real-world uncertainty.
+
 from __future__ import annotations
 import pandas as pd
 from sklearn.metrics import cohen_kappa_score
